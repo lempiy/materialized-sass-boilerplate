@@ -1,4 +1,4 @@
-## Dev boilerplate for sass + materialized
+## Dev boilerplate (Gulp) for sass + materialized
 
 ## Usage:
 
