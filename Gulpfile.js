@@ -8,7 +8,7 @@ var mainNpmFiles = require('gulp-main-npm-files');
 gulp.task('sass', function() {
     return gulp.src([
             './node_modules/materialize-css/sass/materialize.scss',
-            'sass/**/*.sass'
+            './sass/**/*.sass'
         ])
         .pipe(sourcemaps.init())
         .pipe(sass())
@@ -29,6 +29,6 @@ gulp.task('vendorjs', function() {
 });
 
 gulp.task('watch', function(){
-    gulp.watch('sass/**/*.sass', ['sass']);
+    gulp.watch('./sass/**/*.sass', ['sass']);
     gulp.watch('package.json', ['vendorjs']); 
 })
